@@ -1,0 +1,209 @@
+* {
+  margin: 0%;
+  padding: 0;
+  font-family: "Lora", serif;
+}
+
+.banner {
+  background-color: #c4c4c4;
+}
+
+.linkst {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  text-emphasis-color: black;
+  text-decoration-line: none;
+  list-style-type: none;
+}
+.links nav {
+  text-decoration: none;
+}
+
+.titulo {
+  background-color: #7f8dc0;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+.a {
+  margin: 1rem;
+  padding: 1rem;
+  outline: rgb(67, 60, 132) 3px solid;
+}
+.b {
+  outline: rgb(67, 60, 132) 3px solid;
+}
+.section {
+  display: grid;
+  grid-template-areas:
+    "imagen cartas cartas cartas"
+    "imagen cartas cartas cartas"
+    "imagen cartas cartas cartas";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px;
+}
+
+.imagen {
+  grid-area: imagen;
+  margin: 1rem;
+}
+.cartas {
+  grid-area: cartas;
+  margin: 1rem;
+  font-size: small;
+  text-align: justify;
+  text-justify: auto;
+  outline: rgb(67, 60, 132) 3px solid;
+  border: rgb(67, 60, 132) 3px solid;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  text-size-adjust: 5px;
+  gap: 1rem;
+}
+
+.carta {
+  flex: 0 31%;
+  height: 31%;
+  margin-bottom: 2%;
+  text-align: justify;
+  /* outline: rgb(67, 60, 132) 3px solid; */
+  text-align: justify;
+  justify-content: center;
+}
+
+footer {
+  background-color: #c4c4c4;
+  text-align: center;
+  align-items: center;
+}
+.footerlnk {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  text-align: center;
+  align-content: space-around;
+  gap: 2rem;
+  align-self: center;
+  flex-flow: center;
+  justify-content: center;
+}
+
+.bajada {
+  text-align: right;
+}
+
+.resume {
+  grid-area: cartas;
+}
+h1 {
+  text-align: center;
+  padding: 1rem;
+}
+h3 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.o {
+  margin-left: 2rem;
+  padding-left: 2rem;
+}
+.l {
+  padding-left: 2rem;
+  padding-right: 3rem;
+}
+.imgparrafo {
+  display: flex;
+}
+.parrafo {
+  padding-left: 2rem;
+  text-align: justify;
+  padding-right: 2rem;
+}
+
+/* vista mobile */
+@media (min-width: 0px) and (max-width: 767px) {
+  .banner {
+    background-color: rgb(2, 2, 2);
+  }
+  .linkst {
+    padding: 0%;
+    gap: 0.3rem;
+    text-size-adjust: 20%;
+  }
+  .section {
+    display: grid;
+    grid-template-areas:
+      "imagen imagen imagen"
+      "imagen imagen imagen"
+      "imagen imagen imagen"
+      "cartas cartas cartas"
+      "cartas cartas cartas"
+      "cartas cartas cartas";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1px;
+  }
+
+  .cartas {
+    grid-area: cartas;
+    margin: 0rem;
+    font-size: small;
+    text-align: justify;
+    text-justify: auto;
+    outline: rgb(67, 60, 132) 3px solid;
+    border: rgb(67, 60, 132) 3px solid;
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    text-size-adjust: 5px;
+    gap: 0rem;
+  }
+
+  .carta {
+    height: 15rem;
+    margin-bottom: 0%;
+    text-align: justify;
+    /* outline: rgb(67, 60, 132) 3px solid; */
+    text-align: justify;
+    justify-content: center;
+  }
+  .imagen {
+    max-width: 100%;
+    height: auto;
+  }
+  .imgparrafo {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+/* 
+No entiendo por qué mi diseñor responsivo deja margenes hacia arriba y abajo cuando cambian las disposiciones
+- tampoco se reajusta la imagen
+*/
+
+/* To-do:
+1- El doble margen de section
+2- el banner debe sobrepasar el titulo
+4- el logo debe estar en formato bmp
+3- falta la seccion de blogs 
+4- falta el about 
+5- las tarjetas deberian estar en un cuadrado
+6- hacer diseño responsivo
+7- las cartas necesitan otra regla para poder hacer zoom y que sigan presentadose bien
+8- hacer que la imagen use el maximo de width 
+9- el diseño 3x3 del flexbox es un workarround, conseguir una forma más elegante.
+*/
