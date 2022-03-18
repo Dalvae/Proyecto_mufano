@@ -9,97 +9,122 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<header>
-    <div class="links nav">
-        <nav>
-            <ul class="linkst">
-                <li>
-                    <a href="/Primera entrega.html">Mrob</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link activegit" aria-current="page" href="index.html">Mrob</a>
                 </li>
-                <li>
-                    <a href="/Ries.html">RIES</a>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">RIES</a>
                 </li>
-                <li>
-                    <a href="/Mandelbort.html">Mandelbort</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mandelbort</a>
                 </li>
-                <li>
-                    <a href="/Squence.html">Sequence</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sequence</a>
                 </li>
-                <li>
-                    <a href="/Largenum.html">Largenum</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Largenum</a>
                 </li>
-                <li>
-                    <a href="/Xmorphia.html">Xmorphia</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Xmorphia</a>
                 </li>
             </ul>
-        </nav>
+        </div>
     </div>
+</nav>
 
-    <div class="titulo">
-        <h1>The Publised Data Of Robert Munafo</h1>
-    </div>
-</header>
+<div class="titulo">
+    <h1>The Publised Data Of Robert Munafo</h1>
+</div>
+
 
 <body>
-    <section class="section">
-        <div class="imagen">
-            <div class="b">
-                <img class="a" src="../Images/20160729-rm.jpg" alt="Robert Mufano" width="640px">
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="b">
+                    <img class="img-fluid" src="../Images/20160729-rm.jpg" alt="Robert Mufano" width="640px">
+                </div>
             </div>
-        </div>
-        <div class="resume">
-            <h1>Robert Mufano</h1>
-            <p class="bajada">
-                Robert Munafo
-                <br>
-                10 Linwood St. #304 / Malden MA 02148 / (617) 335-1321
-                <br>
-                mröb27@gmáił.com
-            </p>
-            <h3>
-                My Porpouse
-            </h3>
-            <ul>
-                <li>to explore and expand boundaries through efficient and high-performance algorithms </li>
-                <li>to invent, hybridize and build </li>
-                <li>to serve the larger community through writing and teaching of broad intellectual subject matter
-                </li>
-            </ul>
-            <p>
-                I'd like to give you a different type of description of who I am, to put my accomplishments into a
-                3-dimensional picture. You'll get to know me better this way.
-            </p>
-            <ul>
-                <li>I tenaciously pursue long-term projects: I began my reaction-diffusion project in 1994, kept coming
-                    back to it as computers improved, until in 2009 I discovered exotic patterns worth publishing. I
-                    gave a talk on this to Rutgers' mathematics department in 2010; my work on this continues </li>
-                <li>I have an all-consuming passion for numbers, and very large numbers. I seek ways to explore their
-                    beauty and mystery, and evangelize them to others. Much of my website is devoted to this, and
-                    software projects have come out of this: my RIES program (which resulted in my mention in xkcd)
-                    finds formulas/equations in one variable given its root (solution), with results ranked both by
-                    closeness of match and increasing formula complexity. Within a week of the xkcd mention I created
-                    PHP/SQL backend so people would use RIES on their phones. Another example of my exploration of
-                    numbers is my mcsfind program, which is like RIES for integer sequences </li>
-                <li>I've worked with amazing people. Neil Sloane is a world-renowned applied mathematician; I began
-                    corresponding with him about 25 years ago, and my contributions to his books and to OEIS (the Online
-                    Encyclopedia of Integer Sequences, a database highly used by mathematicians) led to my becoming a
-                    board member of OEIS </li>
-                <li>I am an inventor and engineer. I made the Hypercalc large-numbers calculator for PalmOS in 1994 and
-                    eventually translated it into Perl. After seeing Blue Man Group I designed and built my own version
-                    of their PVC organ. I have created several partial and complete orrery designs from LEGO, an example
-                    of constrained design </li>
-                <li>I love building and analyzing puzzles. I love Rubik's Cube type puzzles, built a couple of my own,
-                    and wrote software to find algorithms for their solution. Based on "2048" I created Q04B, my idea
-                    for a much more beautiful and engaging game with an elegant user interface </li>
-                <li>I love the community of creative, passionate and like-minded artists and scientists. My recent "home
-                    online" has been a forum thread for xkcd, where I have posted original works: comics, stories,
-                    poetry, recorded songs, software and hybrid works </li>
-            </ul>
+            <div class="col-md-7">
+                <h1 class="my-20">Robert Mufano</h1>
+                <p class="bajada pgity-20">
+                    Robert Munafo
+                    <br>
+                    10 Linwood St. #304 / Malden MA 02148 / (617) 335-1321
+                    <br>
+                    mröb27@gmáił.com
+                </p>
+                <h3>
+                    My Porpouse
+                </h3>
+                <ul>
+                    <li>to explore and expand boundaries through efficient and high-performance algorithms </li>
+                    <li>to invent, hybridize and build </li>
+                    <li>to serve the larger community through writing and teaching of broad intellectual subject matter
+                    </li>
+                </ul>
+                <p>
+                    I'd like to give you a different type of description of who I am, to put my accomplishments into a
+                    3-dimensional picture. You'll get to know me better this way.
+                </p>
+                <ul>
+                    <li>I tenaciously pursue long-term projects: I began my reaction-diffusion project in 1994, kept
+                        coming
+                        back to it as computers improved, until in 2009 I discovered exotic patterns worth publishing. I
+                        gave a talk on this to Rutgers' mathematics department in 2010; my work on this continues </li>
+                    <li>I have an all-consuming passion for numbers, and very large numbers. I seek ways to explore
+                        their
+                        beauty and mystery, and evangelize them to others. Much of my website is devoted to this, and
+                        software projects have come out of this: my RIES program (which resulted in my mention in xkcd)
+                        finds formulas/equations in one variable given its root (solution), with results ranked both by
+                        closeness of match and increasing formula complexity. Within a week of the xkcd mention I
+                        created
+                        PHP/SQL backend so people would use RIES on their phones. Another example of my exploration of
+                        numbers is my mcsfind program, which is like RIES for integer sequences </li>
+                    <li>I've worked with amazing people. Neil Sloane is a world-renowned applied mathematician; I began
+                        corresponding with him about 25 years ago, and my contributions to his books and to OEIS (the
+                        Online
+                        Encyclopedia of Integer Sequences, a database highly used by mathematicians) led to my becoming
+                        a
+                        board member of OEIS </li>
+                    <li>I am an inventor and engineer. I made the Hypercalc large-numbers calculator for PalmOS in 1994
+                        and
+                        eventually translated it into Perl. After seeing Blue Man Group I designed and built my own
+                        version
+                        of their PVC organ. I have created several partial and complete orrery designs from LEGO, an
+                        example
+                        of constrained design </li>
+                    <li>I love building and analyzing puzzles. I love Rubik's Cube type puzzles, built a couple of my
+                        own,
+                        and wrote software to find algorithms for their solution. Based on "2048" I created Q04B, my
+                        idea
+                        for a much more beautiful and engaging game with an elegant user interface </li>
+                    <li>I love the community of creative, passionate and like-minded artists and scientists. My recent
+                        "home
+                        online" has been a forum thread for xkcd, where I have posted original works: comics, stories,
+                        poetry, recorded songs, software and hybrid works </li>
+                </ul>
 
+            </div>
         </div>
     </section>
     <br>
